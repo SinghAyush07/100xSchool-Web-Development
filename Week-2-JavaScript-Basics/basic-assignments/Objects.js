@@ -44,4 +44,20 @@ console.log(newObject);
 
 // Question-3: Create a function that transforms an object by renaming its keys based on a provided mapping. The function should handle nested objects. For example:
 
-function transfromObj() { }
+// input: { firstName: 'John', address: { city: 'New York' } }
+// mapping: { firstName: 'name', address: { city: 'location.city' } }
+// output: { name: 'John', location: { city: 'New York' } }
+
+let objOriginal = {
+    firstName: "Harkirat",
+    address: {
+        city: "New York",
+    },
+};
+
+let mapping = {
+    firstName: "name",
+    address: {
+        city: "location.city",
+    },
+};
